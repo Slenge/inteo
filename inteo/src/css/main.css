@@ -18,7 +18,34 @@
     margin-right: auto;
 }
 
-
 body{
     color: #2C2C2C;
+}
+
+.header{
+    padding-bottom: 10px;
+}
+
+.header__logo{
+    margin-right: auto;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu__nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item{
+   list-style: none;
+}
+
+.nav__link{
+    text-decoration: none;
 }
