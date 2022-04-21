@@ -18,12 +18,39 @@
     margin-right: auto;
 }
 
-body{
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 96px;
+    letter-spacing: -0.021em;
     color: #2C2C2C;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
+}
+
+h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.025em;
+    color: #2C2C2C;
+
+}
+
+body{
+    min-width: var(--container_width);
+
+    color: #444444;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .header{
-    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .header__logo{
@@ -34,12 +61,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    gap: 32px;
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .menu__nav{
     display: flex;
     justify-content: center;
+    gap: 49px;
 }
 
 .nav__item{
@@ -47,5 +80,149 @@ body{
 }
 
 .nav__link{
+    color: #444;
     text-decoration: none;
+}
+
+.menu__btn{
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 15px 44px 13px 20px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #996830;
+    text-transform: uppercase;
+}
+
+.menu__btn::after{
+    position: absolute;
+    top: 12px;
+    left: 98px;
+    content: "";
+    background-image: url("../img/btn_pointer.png");
+    width: 20px;
+    height: 20px;
+}
+
+.header__preview{
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header__solution{
+    display: inline-block;
+    width: 73%;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 80px;
+}
+
+
+
+.representation{
+    background-color: #2C2C2C;
+}
+
+.representation__foto{
+    position: relative;
+    background-image: url("../img/foto/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 640px;
+}
+
+.representation__btn{
+    position: absolute;
+    top: -63px;
+    left: 7.8%;
+    background-color: transparent;
+    border: none;
+    width: 120px;
+    height: 120px;
+}
+
+.representation__awards{
+    position: relative;
+    display: grid;
+    grid-template-columns: 72px 233px 226px 193px 216px;
+    gap: 64px;
+    margin-top: 25px;
+    padding-bottom: 23px;
+
+    color: #D9D9D6;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.representation__awards::after{
+    position: absolute;
+    top: 38px;
+    left: 52px;
+    content:"";
+    width: 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.awards__text{
+    transform: rotate(-90deg);
+    margin: 5px 0 4px 0;
+
+    opacity: 0.5;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.awards__awards-item{
+    display: flex;
+    align-items: center;
+}
+
+.awards-item__description{
+    margin-left: 12px;
+}
+
+
+
+
+.about{
+    padding-top: 169px;
+}
+
+.container--about{
+    display: grid;
+    grid-template-columns: 592px auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.about__design-foto{
+    display: flex;
+    gap: 16px;
+}
+
+.content__header{
+    margin-left: 80px;
+    text-transform: uppercase;
+    color: #996830;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+
+.content__description{
+    margin-top: 24px;
+}
+
+.content__text{
+    margin-top: 24px;
 }
