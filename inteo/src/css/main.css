@@ -18,6 +18,18 @@
     margin-right: auto;
 }
 
+.container--line{
+    position: relative;
+}
+
+.container--line::after{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #D9D9D6;
+    width: var(--container_width);
+    top: 100%;
+}
+
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 72px;
@@ -41,7 +53,7 @@ h2{
 body{
     min-width: var(--container_width);
 
-    color: #444444;
+    color: #2C2C2C;
     font-family: 'Outfit', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -193,22 +205,31 @@ body{
 
 
 .about{
-    padding-top: 169px;
+    padding-top: 128px;
 }
 
 .container--about{
     display: grid;
     grid-template-columns: 592px auto;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
 }
 
-.about__design-foto{
-    display: flex;
-    gap: 16px;
+.about__content{
+    margin-top: 66px;
+}
+
+.content__header::after{
+    position: absolute;
+    content: "";
+    top:10px;
+    left: -80px;
+    width: 64px;
+    border-bottom: 1px solid #996830;
 }
 
 .content__header{
+    position: relative;
     margin-left: 80px;
     text-transform: uppercase;
     color: #996830;
@@ -220,9 +241,335 @@ body{
 }
 
 .content__description{
-    margin-top: 24px;
+    margin-top: 25px;
 }
 
 .content__text{
     margin-top: 24px;
+}
+
+
+.about__design-foto{
+    position: relative;
+    display: flex;
+    gap: 16px;
+}
+
+.design-foto__first{
+    position: relative;
+}
+
+.about__design-foto::after{
+    position: absolute;
+    content:"";
+    background-image: url("../img/Badge.png");
+    width: 120px;
+    height: 120px;
+    top: -56px;
+    left: 240px;
+}
+
+.design-foto__second {
+    position: absolute;
+    top: 80px;
+    left: 296px;
+}
+
+
+.about__advantages{
+    display: grid;
+    grid-template-columns: 384px 384px 384px;
+    align-items: center;
+    gap: 32px;
+
+    margin-top: 193px;
+    color: #2C2C2C;
+    text-transform: uppercase;
+    padding-bottom: 78px;
+}
+
+.advantages__advantages-block{
+    display: flex;
+    padding-right: 70px;
+    align-items: center;
+    gap: 19px;
+}
+
+.advantages-block__number{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.025em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.advantages-block__description{
+    font-family: 'Outfit', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+
+    padding-top: 9px;
+}
+
+
+
+
+.services{
+    padding-top: 161px;
+    padding-bottom: 100px;
+}
+
+.services__content{
+    width: calc(var(--container_width) * 0.6);
+}
+
+.services__cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.cards__cards-item{
+    position: relative;
+    width: 384px;
+    border: 1px solid #E6D8CC;
+    padding: 167px 30px 38px 39px;
+}
+
+.cards-item__icon{
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+
+.cards-item__icon--pointer{
+    top: 42px;
+    left: 41px;
+}
+
+.cards-item__header{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.cards-item__content{
+    margin-top: 17px;
+}
+
+
+
+
+
+.works{
+    margin-top: 124px;
+}
+
+.container--works{
+    display: flex;
+    gap: 32px;
+    padding-bottom: 118px;
+}
+
+.works__left-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 95px;
+}
+
+.column-item__name.column-item__name--higher{
+    margin-top: 14px;
+}
+
+.works__right-column{
+    display: flex;
+    gap: 79px;
+    flex-direction: column;
+    padding: 0 56px;
+}
+
+.works__btn{
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 20px 48px 20px 25px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #996830;
+    text-transform: uppercase;
+}
+
+.works__btn::after{
+    position: absolute;
+    top: 18px;
+    left: 114px;
+    content: "";
+    background-image: url("../img/btn_pointer.png");
+    width: 20px;
+    height: 20px;
+}
+
+.works__content{
+    padding-right: 10px;
+}
+
+.column-item__name{
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.column-item__description{
+    margin-top: 17px;
+}
+
+
+
+.feedback{
+    margin-top: 82px;
+}
+
+.container--feedback{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    gap: 460px;
+}
+
+.message__text{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.message__link{
+    position: relative;
+    display: inline-block;
+    margin-top: 16px;
+    text-decoration: none;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #996830;
+
+}
+
+.message__link::after{
+    position: absolute;
+    content: "";
+    top: 54px;
+    left: 0;
+    border-bottom: 1px solid #996830;
+    width: 248px;
+
+}
+
+.address__main{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.address__extra,
+.info-item__header{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 7px;
+}
+
+.feedback__info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-item__description{
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'liga' off;
+    color: #996830;
+}
+
+
+
+
+
+.footer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container--footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__copyright-link{
+    color: #996830;
+    text-decoration: none;
+}
+
+.footer__contact{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact__text{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-right: 78px ;
+}
+
+.contact__text::after{
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 92px;
+    border-bottom: 1px solid #444444;
+    width: 64px;
+}
+
+.contact__link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #E6D8CC;
+    border-radius: 100%;
+}
+
+.contact__image{
 }
