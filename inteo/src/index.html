@@ -2,12 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>inteo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>inteo</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/Adaptive.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -25,7 +29,7 @@
             <button class="menu__btn">Contact us</button>
          </div>
         <div class="header__preview">
-            <h1>Make <i>your home</i> an ode to joy</h1>
+            <h1 class="header__offer">Make <i>your home</i> an ode to joy</h1>
             <p class="header__solution">
                 We turn your empty house to a lovely home,
                 making the compact spaces  with sapce saving
@@ -38,36 +42,48 @@
 
     <div class="representation">
         <div class="representation__foto">
-            <button class="representation__btn"><img src="img/CTA Button.png"  alt="Get in touch!"></button>
+            <div class="container container--relative">
+                <button class="representation__btn">
+                    <img src="img/CTA Button.png"  alt="Get in touch!">
+                </button>
+            </div>
         </div>
         <div class="container">
         <div class="representation__awards">
 
-            <p class="awards__text">Awards</p>
+            <p class="awards__text awards__text--grid-text">Awards</p>
 
-            <div class="awards__awards-item">
+            <div class="awards__awards-item awards__awards-item--grid-german">
                 <img class="awards-item__image" src="img/german-design-award.png" alt="german design award">
-                <p class="awards-item__description">German Design Award
-                    2021</p>
+                <div class="awards-item__description">
+                    <p class="description-item">German Design Award</p>
+                    <p class="description-item">2021</p>
+                </div>
             </div>
 
-            <div class="awards__awards-item">
-                    <img class="awards-item__image" src="img/a-design-award.png" alt="a design award">
-                    <p class="awards-item__description">Gold A’ Design Award
-                        2021</p>
+            <div class="awards__awards-item awards__awards-item--grid-a">
+                <img class="awards-item__image" src="img/a-design-award.png" alt="a design award">
+                <div class="awards-item__description">
+                    <p class="description-item">Gold A’ Design Award</p>
+                    <p class="description-item">2021</p>
                 </div>
+            </div>
 
-            <div class="awards__awards-item">
+            <div class="awards__awards-item awards__awards-item--grid-if">
                 <img class="awards-item__image" src="img/if-design-award.png" alt="if design award">
-                <p class="awards-item__description">IF Design Award
-                    2020</p>
+                <div class="awards-item__description">
+                    <p class="description-item">IF Design Award</p>
+                    <p class="description-item">2020</p>
+                </div>
             </div>
 
-            <div class="awards__awards-item">
-                    <img class="awards-item__image" src="img/good-design-award.png" alt="good design award">
-                    <p class="awards-item__description">Good Design Award
-                        2019</p>
+            <div class="awards__awards-item awards__awards-item--grid-good">
+                <img class="awards-item__image" src="img/good-design-award.png" alt="good design award">
+                <div class="awards-item__description">
+                    <p class="description-item">Good Design Award</p>
+                    <p class="description-item">2019</p>
                 </div>
+            </div>
 
         </div>
     </div>
@@ -92,8 +108,8 @@
                     </p>
                 </div>
                 <div class="about__design-foto">
-                    <img class="design-foto__first" src="img/foto/main-foto-1.jpg" alt="Design foto">
-                    <img class="design-foto__second" src="img/foto/main-fofo-2.jpg" alt="Design foto">
+                    <img class="design-foto__first" src="img/foto/main-foto-1-big.jpg" alt="Design foto">
+                    <img class="design-foto__second" src="img/foto/main-fofo-2-big.jpg" alt="Design foto">
                 </div>
             </div>
             <div class="about__advantages">
@@ -174,12 +190,12 @@
 
                 <div class="works__content">
                     <p class="content__header">Recent works</p>
-                    <h2 class="content__description">Some of <i>our crafts</i> <br> made with love</h2>
+                    <h2 class="content__description">Some of <i>our crafts</i> made with love</h2>
                 </div>
 
                 <div class="works__column-item">
 
-                    <img class="column-item-foto" src="img/foto/recent-2.jpg" alt="design example">
+                    <img class="column-item-foto column-item-foto--big" src="img/foto/recent-2.jpg" alt="design example">
 
                     <h4 class="column-item__name column-item__name--higher">Villa Furnishing & Interior</h4>
 
@@ -191,7 +207,7 @@
 
                 </div>
 
-                <button class="works__btn">Contact us</button>
+                <button class="works__btn works__btn--desktop">Contact us</button>
 
             </div>
 
@@ -199,7 +215,7 @@
 
                 <div class="works__column-item">
 
-                    <img class="column-item__foto" src="img/foto/recent-1.jpg" alt="design example">
+                    <img class="column-item__foto column-item-foto--middle" src="img/foto/recent-1.jpg" alt="design example">
 
                     <h4 class="column-item__name">Luxury Hotel Renovation</h4>
 
@@ -212,7 +228,7 @@
 
                 <div class="works__column-item">
 
-                    <img class="column-item__foto" src="img/foto/recent-3.jpg" alt="design example">
+                    <img class="column-item__foto column-item-foto--middle" src="img/foto/recent-3.jpg" alt="design example">
 
                     <h4 class="column-item__name">Residence Swimming Pool</h4>
 
@@ -226,6 +242,7 @@
 
             </div>
 
+            <button class="works__btn works__btn--tablet">Contact us</button>
 
 
 
@@ -287,4 +304,5 @@
     </footer>
 
 </body>
+
 </html>
